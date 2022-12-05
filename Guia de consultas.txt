@@ -1,0 +1,71 @@
+SE RECOMIENDA UTILIZAR POSTMAN PARA REALIZAR LOS METODOS:
+
+***** Para Ingresar un equipo POST *****
+
+{
+    "nombre_e":" ",
+    "descripcion_e":" ",
+    "serial_e":" ",
+    "fecha_inicial_e":" ",
+    "fecha_puesta_marcha_mante_e":" "
+}
+
+***** Para ingresar un trabajo POST *****
+
+{
+    "id_t":" ",
+    "fecha_planificada":" ",
+    "fecha_inicial":" ",
+    "fecha_final":" ",
+    "estatus":" ",
+    "id_equipo":" ",
+}
+
+***** Para actualizar un registro de equipo PUT *****
+
+{
+    "id_e":" ",
+    "nombre_e":" ",
+    "descripcion_e":" ",
+    "serial_e":" ",
+    "fecha_inicial_e":" ",
+    "fecha_puesta_marcha_mante_e":" "
+}
+
+***** Para actualizar un registro de trabajo PUT *****
+
+{
+    "id_t":" ",
+    "fecha_planificada":" ",
+    "fecha_inicial":" ",
+    "fecha_final":" ",
+    "estatus":" "
+}
+
+***** Para borrar un registro de equiops DELETE *****
+
+{
+    "id_e":" "
+}
+
+***** Para borrar un registro de trabajos DELETE *****
+
+{
+    "id_t":" "
+}
+
+***** Para listar todos los equipos GET *****
+
+http://localhost:3000/equipos
+
+***** Para listar todos los trabajos GET *****
+
+http://localhost:3000/trabajos
+
+***** Para buscar un solo registro segun su ID de equipo GET *****
+
+http://localhost:3000/equipos/(aqui va el id)
+
+***** Para buscar un solo registro segun su ID de trabajo GET *****
+
+http://localhost:3000/trabajos/(aqui va el id)
